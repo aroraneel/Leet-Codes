@@ -6,14 +6,20 @@ class Solution:
                     return [i, j]
 
 
-# -------- Main Program --------
 if __name__ == "__main__":
-    nums = [2, 4, 6, 1]
-    target = 3   # ✅ 2 + 1 = 3
-
     sol = Solution()
+
+    nums = [2, 4, 6, 1]
+    target = 3
+
     result = sol.twoSum(nums, target)
 
     print("Array:", nums)
     print("Target:", target)
     print("Indexes:", result)
+
+    # Summary:
+    # This program finds two numbers in the list that add up to the target value.
+    # It checks every possible pair using two nested loops.
+    # When a matching pair is found, it returns their indexes.
+
