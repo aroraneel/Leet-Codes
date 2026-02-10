@@ -22,4 +22,3 @@ if __name__ == "__main__":
     # This program finds two numbers in the list that add up to the target value.
     # It checks every possible pair using two nested loops.
     # When a matching pair is found, it returns their indexes.
-
