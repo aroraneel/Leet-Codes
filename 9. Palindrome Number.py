@@ -16,4 +16,3 @@ if __name__ == "__main__":
     # Summary:
     # This program checks whether the given number is a palindrome.
     # It converts the number into a string and compares it with its reverse.
-
