@@ -25,4 +25,3 @@ if __name__ == "__main__":
     # This program merges two sorted arrays into nums1 in-place.
     # It removes the extra placeholder zeros from nums1 using pop().
     # Then it adds all elements of nums2 into nums1 and sorts the final array.
-    
