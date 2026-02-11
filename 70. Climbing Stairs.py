@@ -1,25 +1,26 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
-        def fun(n):
-            if n < 2:
-                return 1
-            else:
-                return fun(n - 1) + fun(n - 2)
+        if n <= 2:
+            return n
 
-        return fun(n)
+        a, b = 1, 2
+
+        for _ in range(3, n + 1):
+            a, b = b, a + b
+
+        return b
 
 
 if __name__ == "__main__":
     sol = Solution()
 
-    n = 5
+    n = 44
     result = sol.climbStairs(n)
 
     print("Number of stairs:", n)
     print("Ways to climb:", result)
 
     # Summary:
-    # This program calculates the number of distinct ways to climb n stairs.
-    # You can climb either 1 step or 2 steps at a time.
-    # It uses recursion where fun(n) = fun(n-1) + fun(n-2).
-    # The result follows the Fibonacci sequence pattern.
+    # This program finds the number of distinct ways to climb n stairs.
+    # It uses an iterative dynamic programming approach (Fibonacci pattern),
+    # avoiding slow recursion and passing all LeetCode test cases efficiently.
