@@ -53,4 +53,3 @@ if __name__ == "__main__":
     # Each node contains a single digit and digits are stored in reverse order.
     # It adds digit by digit while keeping track of carry.
     # The result is returned as a new linked list in the same reversed format.
-    
