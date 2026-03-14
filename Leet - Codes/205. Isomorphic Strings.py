@@ -39,3 +39,4 @@ if __name__ == "__main__":
     # A mapping is created from characters in s to characters in t.
     # It ensures each character maps consistently and uniquely.
     # If the transformed string matches t, the strings are isomorphic.
+    
